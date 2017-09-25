@@ -1,0 +1,9 @@
+@page "{title}"
+@model PostModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>@Model.Title</h1>
+<a asp-page="./Index">回到首页</a>
+<div>@Html.Raw(Model.Content)</div>

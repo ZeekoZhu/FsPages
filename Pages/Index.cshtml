@@ -1,0 +1,10 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@foreach( var post in Model.PostList)
+{
+    <a asp-page="./Post" asp-route-title="@post">@post</a>
+}
